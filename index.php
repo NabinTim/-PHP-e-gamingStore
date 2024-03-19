@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GameVault</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+<header class="header">
+    <a href="#" class="Logo">
+    <img src="image.png" alt="Logo"><a class="title" >GameVault</a>
+</a>
+        
+<nav class="navbar">
+    <input type="text" placeholder="Search" class="search-bar">
+    <button class="search-btn">Search</button>
+    <a class="nav-link" href="#">Products</a>
+    <a class="nav-link" href="#">Register</a>
+    <a class="nav-link" href="#">Contact</a>
+    <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i><sup>1</sup></a>
+    <a class="nav-link" href="#">Total Price: 5$ </a>
+</nav>
+
+        
+    </header>
+    <nav class="navbar2">
+    <a class="nav-link" href="#">Welcome Guest</a>
+    <a class="nav-link" href="#">Login</a>
+</nav>  
+
+    
+   
+    <div class="Welcome">
+        <p class="first"> Welcome to GameVault! </p><br>
+        <p class="second">Step into a realm where gaming reigns supreme and adventures await at every turn. 
+            Whether you're seeking thrilling battles, captivating stories, or simply a place to connect with fellow gamers,
+             you've come to the right place. Our doors are open wide, ready to welcome you into a community fueled by passion, 
+             excitement, and boundless creativity. Get ready to embark on an epic journey through the world of gaming with GameVault 
+             as your trusted companion. Let the games begin!</p>
+    </div>
+
+    <div class="grid-container">
+    <div class="grid-item"><img src="spider.avif" alt="1st game"><button class="button1">Add to cart<i class="fa-solid fa-cart-shopping"></i></button><button class="read-more">Read more</button></div>
+    <div class="grid-item"><img src="cyber.avif" alt="2nd game"><button class="button1">Add to cart<i class="fa-solid fa-cart-shopping"></i></button><button class="read-more">Read more</button></div>
+    <div class="grid-item"><img src="gtav.avif" alt="3st game"><button class="button1">Add to cart<i class="fa-solid fa-cart-shopping"></i></button><button class="read-more">Read more</button></div>
+    <div class="grid-item"><img src="gtavc.avif" alt="4nd game"><button class="button1">Add to cart<i class="fa-solid fa-cart-shopping"></i></button><button class="read-more">Read more</button></div>
+    <div class="grid-item"><img src="spider.avif" alt="5st game"><button class="button1">Add to cart<i class="fa-solid fa-cart-shopping"></i></button><button class="read-more">Read more</button></div>
+    <div class="grid-item"><img src="pubg.avif" alt="6nd game"><button class="button1">Add to cart<i class="fa-solid fa-cart-shopping"></i></button><button class="read-more">Read more</button></div>
+    <div class="grid-item"><img src="fc.avif" alt="7st game"><button class="button1">Add to cart<i class="fa-solid fa-cart-shopping"></i></button><button class="read-more">Read more</button></div>
+    <div class="grid-item"><img src="rdr.avif" alt="8nd game"><button class="button1">Add to cart<i class="fa-solid fa-cart-shopping"></i></button><button class="read-more">Read more</button></div>
+    <div class="grid-item"><img src="last.avif" alt="9st game"><button class="button1">Add to cart<i class="fa-solid fa-cart-shopping"></i></button><button class="read-more">Read more</button></div>
+    <div class="grid-item"><img src="drift.avif" alt="10nd game"><button class="button1">Add to cart<i class="fa-solid fa-cart-shopping"></i></button><button class="read-more">Read more</button></div>
+    <div class="grid-item"><img src="lastofus.avif" alt="11st game"><button class="button1">Add to cart<i class="fa-solid fa-cart-shopping"></i></button><button class="read-more">Read more</button></div>
+    <div class="grid-item"><img src="sims4.avif" alt="12nd game"><button class="button1">Add to cart<i class="fa-solid fa-cart-shopping"></i></button><button class="read-more">Read more</button></div>
+    
+</div>
+
+
+
+
+
+    <footer class="footer">
+    <p>This is the footer content.</p>
+</footer>
+   
+</body>
+</html>
