@@ -13,7 +13,6 @@ body{
     background-position: center;
     
 }
-
 .header{
     position: fixed;
     top: 0;
@@ -27,7 +26,6 @@ body{
     z-index: 100;
     backdrop-filter: blur(10px);
 }
-
 .Logo img {
     max-width: 2cm;
     max-height: 2cm;
@@ -42,10 +40,6 @@ body{
 .Logo img:hover {
     box-shadow: #58ed48 0px 0px 15px 8px;
 }
-
-
-
-
 .title {
     background-image: linear-gradient(to right, #e12b68, #22ff22); 
     -webkit-background-clip: text;
@@ -60,10 +54,6 @@ body{
 .title:hover {
     background-position: right; 
 }
-
-
-
-
 .navbar {
     display: flex;
     justify-content: center;
@@ -90,13 +80,6 @@ body{
     margin-right: 10px;
     margin-left: 1cm;
 }
-
-.Welcome{
-    color: white;
-    padding-top: 4.5cm;
-    text-align: center;
-}
-
 .search-btn{
     padding-left: 10px;
     padding-right: 10px;
@@ -115,14 +98,7 @@ body{
     cursor: pointer;
     background-color:#1375a5da;
 }
-
-footer {
-    background-color: #012646cd;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  .navbar2 {
+.navbar2 {
     position: fixed;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -135,9 +111,37 @@ footer {
     background-color: #3333338a;
     backdrop-filter: blur(10px);
     z-index: 101;
+    text-align: center;
 
 }
 .navbar2 .nav-link {
+    margin-right: 1cm; 
+    text-decoration: none;
+    color: rgb(252, 175, 23);
+    margin-left: 17.5cm;
+    font-weight: bolder;
+    text-align: center;
+    font-size: larger;
+    
+}
+
+.navbar3 {
+    position: fixed;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    top: 158px;
+    width: 100%;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #ffffff8a;
+    backdrop-filter: blur(10px);
+    z-index: 101;
+    padding-right: 10px;
+
+}
+.navbar3 .nav-link {
     margin-right: 1cm; 
     text-decoration: none;
     color: rgb(252, 175, 23);
@@ -145,138 +149,49 @@ footer {
     font-weight: bolder;
     
 }
-
-.first, .second{
-    color:rgb(252, 175, 23);
-    font-family: "Rubik Dirt", system-ui;
-    font-size: large;
-    padding-left: 20px;
-    padding-right: 20px;
-
+.navbar-brand {
+    display: flex;
+    align-items: center;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 2cm; 
-    margin-right: 5cm;
-    margin-left: 1cm;
-    margin-top: 2cm;
-    backdrop-filter: blur(10px);
-    
+.brand-image {
+    width: 5cm;
+    height:5cm;
+    margin-right: 10px;
 }
 
-.grid-item {
-    background-color: #5785ef68; 
-    border: 1px solid #000;
-    padding: 0px;
-    text-align: center; 
-    height: 12.4cm;
-    width: 8cm;
-    margin-right: 0;
+.brand-name {
+    font-size: 24px;
+    margin-bottom: 5px;
     margin-left: 0;
-    margin-top: 1cm;
-    border-radius: 15px;
-    box-shadow: #000 0 0 10px;  
-    }
-
-.grid-item img {
-    max-width: 100%; 
-    max-height: 100%; 
-    box-shadow: #000 0 0 10px;  
-    
+    display: inline-block;
+    text-align: center;
 }
 
-.button1 {
-    color: white;
-    background-color: #c6235a;
-    border: 0px solid #ccc; 
-    position: relative;
-    left: -0.3cm; 
-    margin-top: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 7px;
-    padding-right: 7px;
+
+.image1{
+    width: 5cm;
+    height: 7cm;
+    display: inline-block;
+    background-color: rgba(236, 198, 30, 0.703);
+    backdrop-filter: blur(10px);
+    margin-right: 0;
+    margin-left: 0.5cm;
+    margin-top: 0cm;
     border-radius: 10px;
-    box-shadow: #000 0 0 10px;  
-    cursor: pointer;
 }
-
-.read-more{
-    background-color: rgba(146, 240, 88, 0.681);
-    border: 0px solid #ccc; 
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 7px;
-    padding-right: 7px;
+.navbar-links .nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 10px;
+    background-color: #e90f66;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 10px;
-    margin-left: 20px;
-    box-shadow: #000 0 0 10px;  
-    cursor: pointer;
 }
 
-
-
-
-
-
-/* BREAKPOINTS */
-@media (max-width: 434px) {
-    .header {
-        padding: 1.3rem 3%;
-    }
-
-    .navbar a {
-        margin-left: 10px;
-        font-size: 14px;
-    }
-
-    .Logo img {
-        max-width: 1.5cm;
-        max-height: 1.5cm;
-    }
-
-    .search-bar {
-        padding-right: 10px;
-    }
-
-    .Welcome {
-        padding-top: 3cm;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1cm; 
-        margin-right: 1cm;
-        margin-left: 1cm;
-        margin-top: 2cm;
-    }
-
-    .grid-item {
-        height: 8cm;
-        width: 7cm;
-        margin-top: 0.5cm;
-    }
-
-    .button1, .read-more {
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-top: 10px;
-    }
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        gap: 2cm; 
-        margin-right: 5cm;
-        margin-left: 1cm;
-        margin-top: 2cm;
-        backdrop-filter: blur(10px);
-        width: 1cm;
-        
-    }
+.navbar-links .nav-link:last-child {
+    margin-right: 0;
 }
