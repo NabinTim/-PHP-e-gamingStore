@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 <header class="header">
@@ -39,7 +40,7 @@
     <div class="navbar-links">
         <a class="nav-link" href="#">Insert Product</a>
         <a class="nav-link" href="#">View Products</a>
-        <a class="nav-link" href="#">Insert Categories</a>
+        <a class="nav-link" href="index.php?insert_category">Insert Categories</a>
         <a class="nav-link" href="#">View Brands</a>
         <a class="nav-link" href="#">All Orders</a>
         <a class="nav-link" href="#">All Payments</a>
@@ -47,9 +48,13 @@
         <a class="nav-link" href="#">Logout</a>
     </div>
 </nav>
-
-
-
+<div class="container">
+    <?php
+    if(isset($_GET['insert_category'])){
+    include('insert_categories.php');
+    }
+    ?>
+</div>
 
 </body>
 </html>
