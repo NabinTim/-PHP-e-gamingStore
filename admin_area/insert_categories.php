@@ -24,8 +24,10 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 12cm;
-            width: 25cm;
+            margin-top: 22cm;
+            width: 10cm;
+            height: 15cm;
+            
         }
 
         .input-group {
