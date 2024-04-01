@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -103,6 +104,7 @@ body{
     color: white;
     padding-top: 4.5cm;
     text-align: center;
+    
 }
 
 .search-btn{
@@ -154,7 +156,27 @@ footer {
     
 }
 
-.first, .second{
+.first{
+    font-family: "Bebas Neue", sans-serif;
+    border: white solid 1.2px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 9px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    text-decoration: none;
+    color: white;
+    
+} 
+.first:hover{
+    color: rgb(255, 145, 0);
+    background-color: rgb(199, 25, 106);
+    border: #000 solid 1.2px;
+    
+} 
+.second{
     color:rgb(252, 175, 23);
     font-family: "Rubik Dirt", system-ui;
     font-size: large;
@@ -299,11 +321,12 @@ footer {
         height: 12.4cm; 
         overflow: hidden; 
         position: relative;
-        transition: width 0.5s ease-in-out; 
+        transition: all 0.5s ease-in-out; 
     }
     
     .grid-item2:hover {
         width: 7cm; 
+        box-shadow: rgb(196, 185, 65) 0px 0px 40px; 
     }
     
     .grid-item2 img {
@@ -318,14 +341,14 @@ footer {
         margin-top: 4cm;
         margin-left: 1cm;
         font-size: 30px;
-        width: 27cm;
+        width: 24cm;
         line-height: 50px;
-        font-family: "Press Start 2P", system-ui;
+        font-family: "Rubik Dirt", system-ui;
         background-color: rgb(11, 11, 17) ;
         padding-left: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
-        padding-right: 0;
+        padding-right: 20px;
         text-align: left;
         border-top-right-radius: 200px ;
         border-bottom-right-radius: 200px ;
@@ -379,14 +402,41 @@ footer {
             
         }
         
+       .main-image{
+        width: 59%;
+        height: 30%;
+        object-fit: cover; 
+        box-shadow: 0 0 10px #000; 
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom: rgb(199, 25, 106) solid  ;
+        transition: all 0.5s;
         
+ 
+       } 
+
+       .main-image:hover{
+        box-shadow: #773b66 2px 2px 20px 6px;
+      
+       }
+       .play-button {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px; 
+        height: 80px;
+        background-image: url('play.svg');
+        background-size: cover;
+        cursor: pointer;
+    }
 
 
 
-/* Breakpoints */
+
 @media (max-width: 431px) {
     .header {
-        padding: 1.3rem 2%; /* Adjust as needed */
+        padding: 1.3rem 2%;
     }
 
     .Logo img {
@@ -403,11 +453,11 @@ footer {
     }
 }
 
-/* For small screens, show only one column */
+
 @media (max-width: 431px) {
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(20, 1fr); /* Adjust as needed */
+        grid-template-rows: repeat(20, 1fr);
         gap: 1cm;
         margin-right: 1cm;
         margin-left: 1cm;
@@ -416,8 +466,8 @@ footer {
 
     .grid-container2 {
         display: flex;
-        flex-wrap: wrap; /* Ensure items wrap to next line */
-        justify-content: center; /* Center items horizontally */
+        flex-wrap: wrap; 
+        justify-content: center; 
         gap: 10px;
         margin-right: 1cm;
         margin-left: 1cm;
@@ -458,17 +508,17 @@ footer {
 }
 
 .navbar a {
-    margin-left: 0.5rem; /* Adjust as needed */
-    font-size: 16px; /* Adjust as needed */
+    margin-left: 0.5rem; 
+    font-size: 16px;
 }
 
 .search-bar {
-    margin-right: 0rem; /* Adjust as needed */
-    margin-left: 0rem; /* Adjust as needed */
+    margin-right: 0rem; 
+    margin-left: 0rem; 
 }
 
 .Welcome {
-    padding-top: 0cm; /* Adjust as needed */
+    padding-top: 0cm;
     width: 9.1cm;
     margin-top: 5cm;
 }
