@@ -1,22 +1,26 @@
 <!DOCTYPE html>
+<?php
+include('..includes/connect.php');
+
+
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Example</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+       body{
+         font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            
-        }
-
-        .container {
-            margin-top: 15px;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; 
             height: 100vh;
+            flex-wrap: nowrap;
+            margin-top: 14cm;
         }
 
         .form-wrapper {
@@ -24,10 +28,7 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 22cm;
-            width: 10cm;
-            height: 15cm;
-            
+            width: 300px;
         }
 
         .input-group {
@@ -61,17 +62,15 @@
 </head>
 <body>
 
-<div class="container">
-    <div class="form-wrapper">
-        <form action="" method="post" class="first_form">
-            <div class="input-group">
-                <span class="input-group-text" id="basic-addon1">@</span>
-                <input type="text" class="form-control" name="cat_title" placeholder="Insert categories" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
+<div class="form-wrapper">
+    <form action="" method="post" class="first_form">
+        <div class="input-group">
+            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-receipt"></i></span>
+            <input type="text" class="form-control" name="cat_title" placeholder="Insert categories" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
 
-            <input type="submit" class="form-control bg-info" name="insert_cat" value="Insert Categories" aria-label="Username" aria-describedby="basic-addon1">
-        </form>
-    </div>
+        <input type="submit" class="form-control bg-info" name="insert_cat" value="Insert Categories">
+    </form>
 </div>
 
 </body>

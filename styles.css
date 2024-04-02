@@ -4,8 +4,9 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     box-sizing: border-box;
+    letter-spacing: 1.5px;
 }
 
 body{
@@ -14,6 +15,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    overflow:auto;
     
 }
 
@@ -55,7 +57,7 @@ body{
     -webkit-text-fill-color: transparent;
     font-size: 50px;
     margin-left: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     background-size: 200% 100%; 
     transition: background-position 1s ease-in-out; 
 }
@@ -74,17 +76,19 @@ body{
 }
 
 .navbar a{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     color: #c6235a;
     margin-left: 1cm; 
     text-decoration: none;
     font-weight: 800;
     padding-right: 20px;
     font-size: 20px;
-    transition: color 0.7s;
+    transition: color ease-in-out 0.2s;
 }
 .navbar a:hover{
     color: white;
+    
+   
 }
 
 
@@ -150,11 +154,12 @@ footer {
 .navbar2 .nav-link {
     margin-right: 1cm; 
     text-decoration: none;
-    color: rgb(252, 175, 23);
+    color: rgb(199, 25, 106) ;
     margin-left: 1cm;
     font-weight: bolder;
     
 }
+
 
 .first{
     font-family: "Bebas Neue", sans-serif;
@@ -162,8 +167,8 @@ footer {
     border-radius: 5px;
     padding: 5px 10px;
     display: inline-block;
-    margin-top: 8px;
-    margin-bottom: 9px;
+    margin-top: 12px;
+    margin-bottom: 11px;
     cursor: pointer;
     transition: all ease-in-out .3s;
     text-decoration: none;
@@ -178,10 +183,12 @@ footer {
 } 
 .second{
     color:rgb(252, 175, 23);
-    font-family: "Rubik Dirt", system-ui;
-    font-size: large;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 1cm;
+    line-height: 40px;
 
 }
 
@@ -343,7 +350,7 @@ footer {
         font-size: 30px;
         width: 24cm;
         line-height: 50px;
-        font-family: "Rubik Dirt", system-ui;
+        font-family: "Bebas Neue", sans-serif;
         background-color: rgb(11, 11, 17) ;
         padding-left: 20px;
         padding-top: 10px;
@@ -405,11 +412,11 @@ footer {
        .main-image{
         width: 59%;
         height: 30%;
-        object-fit: cover; 
+        object-fit:fill; 
         box-shadow: 0 0 10px #000; 
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
-        border-bottom: rgb(199, 25, 106) solid  ;
+        border-bottom: rgb(217, 22, 113) solid 5px ;
         transition: all 0.5s;
         
  
@@ -429,6 +436,99 @@ footer {
         background-image: url('play.svg');
         background-size: cover;
         cursor: pointer;
+    }
+    a {
+        color: white; 
+        text-decoration: none; 
+      }
+    
+
+      a:visited {
+        color: rgb(255, 255, 255);
+      }
+  
+      a:active {
+        color: rgb(255, 255, 255); 
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content:center;
+        margin-top: 20px;
+        align-items: center;
+        gap: 0.5cm;
+      }
+
+      .fa-facebook-f{
+        font-size: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .fa-twitter{
+        font-size: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .fa-instagram{
+        font-size: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .fa-youtube{
+        font-size: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .fa-linkedin{
+        font-size: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .fa-github{
+        font-size: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .handles{
+        display: inline-block;
+        align-items:flex-start
+      }
+
+      .categories {
+        width: 20%;
+        margin: 20px auto;
+    }
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        
+    }
+    
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+        color: white;
+        
+    }
+    
+    table th {
+        background-color: #d11783;
+        color: white;
+        
+    }
+    
+    table tr:nth-child(even) {
+        background-color: #37ff83;
+        color: white;
+        
     }
 
 
