@@ -3,16 +3,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
-    font-family: "Bebas Neue", sans-serif;
+    
     background-image: url('images/bg.gif');
     letter-spacing: 1.5px;
-    margin: 0;
-    padding: 0;
-    color: rgb(255, 170, 0);
-    font-weight: bolder;
-    font-size: 15px;
+    font-family: "Bebas Neue", sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
+}
+/* Container Styles */
+.container {
+    max-width: 600px;
+    margin: 150px auto;
+    padding: 20px;
+    background-color: rgba(80, 76, 76, 0.448);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h2 {
+    color: #e62464;
+    font-size: 24px;
+}
+
+.container p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.container input[type="button"] {
+    background-color: #e62464;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.container input[type="button"]:hover {
+    background-color: #c6235a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

@@ -47,22 +47,9 @@ $result = $conn->query($sql);
     <title>Admin Panel</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+<link rel="stylesheet" href="admin_styles.css">
 </head>
-<body>
+<div class="table-container">
     <h2>Purchase Data</h2>
     <table>
         <thead>
@@ -78,6 +65,7 @@ $result = $conn->query($sql);
             </tr>
         </thead>
         <tbody>
+        </div>
             <?php
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
@@ -93,7 +81,7 @@ $result = $conn->query($sql);
                     echo "</tr>";
                 }
             } else {
-                echo "<tr><td colspan='8'>No purchases yet</td></tr>";
+                echo "<tr><td colspan='8' class='no-data'>No purchases yet</td></tr>";
             }
             ?>
         </tbody>

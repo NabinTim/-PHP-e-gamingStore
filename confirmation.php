@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($conn->query($sql) === TRUE) {
         echo "<div class='container'>";
         echo "<h2>Thank you for your purchase, $name!</h2>";
-        echo "<p>We appreciate your business. You can go back to the main page to continue buying more games.</p>";
+        echo "<p>We appreciate time. You can go back to the main page to continue buying more games.</p>";
         echo "<a href='index.php'><input type='button' value='Back to Main Page'></a>";
         echo "</div>";
     } else {
