@@ -13,7 +13,7 @@
     }
 
     // Execute SELECT query
-    $sql = "SELECT * FROM `order`"; // Using `order` instead of order as it's a reserved keyword
+    $sql = "SELECT * FROM `order`"; 
     $result = $conn->query($sql);
 
     echo "<table border='1'>
