@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="login_styles.css">
 <?php
 session_start();
 
@@ -30,12 +31,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <h2>Login</h2>
-    <form method="post">
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br>
-        <button type="submit">Login</button>
-    </form>
+    <div class="container">
+        <h2>Login as admin to continue</h2>
+        <form method="post">
+            <label for="password">Provide Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">Login</button>
+        </form>
     <?php
     if (isset($error)) {
         echo "<p>$error</p>";

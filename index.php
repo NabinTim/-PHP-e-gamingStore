@@ -28,7 +28,7 @@
     <a class="nav-link" href="#">Register</a>
     <a class="nav-link" href="#">Contact</a>
     <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i><sup>1</sup></a>
-    <a class="nav-link" href="#">Total Price: 5$ </a>
+    <a class="nav-link" href="#">Your Balance: 1589$ </a>
 </nav>
 
         
@@ -66,6 +66,7 @@
         header("Location: order.php"); // Redirect to order.php
         exit();
     }
+    
     ?>
 <!-- First game -->
 <div class="grid-item" id="game1">
@@ -74,8 +75,8 @@
         <input type="hidden" name="game" value="Spider-Man Miles Morales">
         <input type="hidden" name="price" value="49.99">
         
-        <!-- Add input field for date of birth -->
-        <label for="dob1">Date of Birth:</label>
+        <!-- Add input field for Add Date of Birth To Continue -->
+        <label for="dob1">Add Date of Birth To Continue:</label>
         <input type="date" id="dob1" name="dob" required>
         
         <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
@@ -89,8 +90,8 @@
         <input type="hidden" name="game" value="Rocket League">
         <input type="hidden" name="price" value="59.99">
         
-        <!-- Add input field for date of birth -->
-        <label for="dob2">Date of Birth:</label>
+        <!-- Add input field for Add Date of Birth To Continue -->
+        <label for="dob2">Add Date of Birth To Continue:</label>
         <input type="date" id="dob2" name="dob" required>
         
         <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
@@ -104,8 +105,8 @@
         <input type="hidden" name="game" value="GTA V">
         <input type="hidden" name="price" value="39.99">
         
-        <!-- Add input field for date of birth -->
-        <label for="dob3">Date of Birth:</label>
+        <!-- Add input field for Add Date of Birth To Continue -->
+        <label for="dob3">Add Date of Birth To Continue:</label>
         <input type="date" id="dob3" name="dob" required>
         
         <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
@@ -119,8 +120,8 @@
         <input type="hidden" name="game" value="GTA Vice City">
         <input type="hidden" name="price" value="29.99">
         
-        <!-- Add input field for date of birth -->
-        <label for="dob4">Date of Birth:</label>
+        <!-- Add input field for Add Date of Birth To Continue -->
+        <label for="dob4">Add Date of Birth To Continue:</label>
         <input type="date" id="dob4" name="dob" required>
         
         <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
@@ -134,8 +135,8 @@
         <input type="hidden" name="game" value="Spider-Man Miles Morales">
         <input type="hidden" name="price" value="49.99">
         
-        <!-- Add input field for date of birth -->
-        <label for="dob5">Date of Birth:</label>
+        <!-- Add input field for Add Date of Birth To Continue -->
+        <label for="dob5">Add Date of Birth To Continue:</label>
         <input type="date" id="dob5" name="dob" required>
         
         <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
@@ -149,8 +150,8 @@
         <input type="hidden" name="game" value="PUBG BATTLEGROUNDS">
         <input type="hidden" name="price" value="29.99">
         
-        <!-- Add input field for date of birth -->
-        <label for="dob6">Date of Birth:</label>
+        <!-- Add input field for Add Date of Birth To Continue -->
+        <label for="dob6">Add Date of Birth To Continue:</label>
         <input type="date" id="dob6" name="dob" required>
         
         <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
@@ -164,8 +165,8 @@
         <input type="hidden" name="game" value="FC 2024">
         <input type="hidden" name="price" value="49.99">
         
-        <!-- Add input field for date of birth -->
-        <label for="dob7">Date of Birth:</label>
+        <!-- Add input field for Add Date of Birth To Continue -->
+        <label for="dob7">Add Date of Birth To Continue:</label>
         <input type="date" id="dob7" name="dob" required>
         
         <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
@@ -179,8 +180,8 @@
         <input type="hidden" name="game" value="Read Dead Redemption 2">
         <input type="hidden" name="price" value="59.99">
         
-        <!-- Add input field for date of birth -->
-        <label for="dob8">Date of Birth:</label>
+        <!-- Add input field for Add Date of Birth To Continue -->
+        <label for="dob8">Add Date of Birth To Continue:</label>
         <input type="date" id="dob8" name="dob" required>
         
         <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
@@ -194,8 +195,8 @@
         <input type="hidden" name="game" value="Last Remains">
         <input type="hidden" name="price" value="39.99">
         
-        <!-- Add input field for date of birth -->
-        <label for="dob9">Date of Birth:</label>
+        <!-- Add input field for Add Date of Birth To Continue -->
+        <label for="dob9">Add Date of Birth To Continue:</label>
         <input type="date" id="dob9" name="dob" required>
         
         <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
@@ -209,8 +210,8 @@
         <input type="hidden" name="game" value="Torque Drift 2">
         <input type="hidden" name="price" value="19.99">
         
-        <!-- Add input field for date of birth -->
-        <label for="dob10">Date of Birth:</label>
+        <!-- Add input field for Add Date of Birth To Continue -->
+        <label for="dob10">Add Date of Birth To Continue:</label>
         <input type="date" id="dob10" name="dob" required>
         
         <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
@@ -224,8 +225,8 @@
         <input type="hidden" name="game" value="THE LAST OF US PART 1">
         <input type="hidden" name="price" value="39.99">
         
-        <!-- Add input field for date of birth -->
-        <label for="dob11">Date of Birth:</label>
+        <!-- Add input field for Add Date of Birth To Continue -->
+        <label for="dob11">Add Date of Birth To Continue:</label>
         <input type="date" id="dob11" name="dob" required>
         
         <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
@@ -239,8 +240,8 @@
         <input type="hidden" name="game" value="The SIMS 4">
         <input type="hidden" name="price" value="49.99">
         
-        <!-- Add input field for date of birth -->
-        <label for="dob12">Date of Birth:</label>
+        <!-- Add input field for Add Date of Birth To Continue -->
+        <label for="dob12">Add Date of Birth To Continue:</label>
         <input type="date" id="dob12" name="dob" required>
         
         <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
@@ -255,8 +256,8 @@
         <input type="hidden" name="game" value="The SIMS 4">
         <input type="hidden" name="price" value="49.99">
         
-        <!-- Add input field for date of birth -->
-        <label for="dob12">Date of Birth:</label>
+        <!-- Add input field for Add Date of Birth To Continue -->
+        <label for="dob12">Add Date of Birth To Continue:</label>
         <input type="date" id="dob12" name="dob" required>
         
         <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>

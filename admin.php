@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete'])) {
 }
 
 // Retrieve purchase data from the database
-$sql = "SELECT id, game, price, credit_card FROM purchases";
+$sql = "SELECT id, game, price, credit_card, name, email, address, postal_code FROM purchases";
 $result = $conn->query($sql);
 ?>
 
@@ -70,6 +70,10 @@ $result = $conn->query($sql);
                 <th>Game</th>
                 <th>Price</th>
                 <th>Credit Card</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Postal Code</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -81,11 +85,15 @@ $result = $conn->query($sql);
                     echo "<td>" . $row["game"] . "</td>";
                     echo "<td>$" . $row["price"] . "</td>";
                     echo "<td>" . $row["credit_card"] . "</td>";
+                    echo "<td>" . $row["name"] . "</td>";
+                    echo "<td>" . $row["email"] . "</td>";
+                    echo "<td>" . $row["address"] . "</td>";
+                    echo "<td>" . $row["postal_code"] . "</td>";
                     echo "<td><form method='POST'><input type='hidden' name='delete_id' value='" . $row["id"] . "'><button type='submit' name='delete'>Delete</button></form></td>";
                     echo "</tr>";
                 }
             } else {
-                echo "<tr><td colspan='4'>No purchases yet</td></tr>";
+                echo "<tr><td colspan='8'>No purchases yet</td></tr>";
             }
             ?>
         </tbody>

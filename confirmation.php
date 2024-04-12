@@ -1,4 +1,7 @@
+<link rel="stylesheet" type="text/css" href="confirmation_styles.css">
 <?php
+session_start();
+
 // Database connection
 $servername = "localhost";
 $username = "root";
@@ -14,29 +17,33 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Handle confirmation
+    // Retrieve user information from the form
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $address = $_POST['address'];
+    $postal_code = $_POST['postal_code'];
+
+    // Handle credit card information
     $game = $_POST['game'];
     $price = $_POST['price'];
     $credit_card = $_POST['credit_card'];
-    
-    // Process the purchase and display confirmation
-    echo "<h2>Confirmation</h2>";
-    echo "<p>Thank you for your purchase!</p>";
-    echo "<p>Game: $game</p>";
-    echo "<p>Price: $$price</p>";
-    echo "<p>Credit Card: $credit_card</p>";
 
-    // Insert purchase data into the database
-    $sql = "INSERT INTO purchases (game, price, credit_card) VALUES ('$game', '$price', '$credit_card')";
+    // Store purchase data in the database
+    $sql = "INSERT INTO purchases (game, price, credit_card, name, email, address, postal_code) VALUES ('$game', '$price', '$credit_card', '$name', '$email', '$address', '$postal_code')";
     if ($conn->query($sql) === TRUE) {
-        echo "Purchase data recorded successfully";
+        echo "<div class='container'>";
+        echo "<h2>Thank you for your purchase, $name!</h2>";
+        echo "<p>We appreciate your business. You can go back to the main page to continue buying more games.</p>";
+        echo "<a href='index.php'><input type='button' value='Back to Main Page'></a>";
+        echo "</div>";
     } else {
-        echo "Error recording purchase data: " . $conn->error;
+        echo "Error storing purchase data: " . $conn->error;
     }
 } else {
     // Redirect back to index.php if accessed directly
     header("Location: index.php");
-    exit();
+exit();
+
 }
 
 // Close database connection
