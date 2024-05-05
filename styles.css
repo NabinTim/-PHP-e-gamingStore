@@ -14,10 +14,10 @@ label {
     font-size: 15px;
     color: #ffffff;
     margin-bottom: 0px;
-    margin-right: 10px; /* Add space between label and input */
+    margin-right: 10px; 
   }
   
-  /* Style for input field */
+  
   input[type="date"] {
     font-size: 15px;
     padding: 4px;
@@ -25,7 +25,7 @@ label {
     border-radius: 4px;
     width: 80%;
     height: 30px;
-    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    box-sizing: border-box; 
   }
 
 body{
