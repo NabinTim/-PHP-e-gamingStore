@@ -72,6 +72,7 @@
         <input type="hidden" name="price" value="49.99">
         
         <button type="submit" class="button1 addToCart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        
     </form>
 </div>
 
@@ -196,47 +197,8 @@
     </form>
 </div>
 
-<!-- Eleventh game -->
-<div class="grid-item" id="game11">
-    <img src="images/lastofus.avif" alt="11th game">
-  
-        <input type="hidden" name="game" value="THE LAST OF US PART 1">
-        <input type="hidden" name="price" value="39.99">
-        
-
-        
-        <button type="submit" class="button1 addToCart" id="cart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
-    </form>
-</div>
-
-<!-- Twelfth game -->
-<div class="grid-item" id="game12">
-    <img src="images/sims4.avif" alt="12th game">
-  
-        <input type="hidden" name="game" value="The SIMS 4">
-        <input type="hidden" name="price" value="49.99">
-        
-
-        
-        
-        <button type="submit" class="button1 addToCart" id="cart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
-    </form>
-</div>
 
 
-<!-- Twelfth game -->
-<div class="grid-item" id="game12">
-    <img src="images/sims4.avif" alt="12th game">
-  
-        <input type="hidden" name="game" value="The SIMS 4">
-        <input type="hidden" name="price" value="49.99">
-        
-
-        
-        
-        <button type="submit" class="button1 addToCart" id="cart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
-    </form>
-</div>
 </div>
 
 
