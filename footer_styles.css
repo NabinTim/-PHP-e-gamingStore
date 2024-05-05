@@ -1,0 +1,86 @@
+.footer {
+        position: fixed;
+    background-color: #012646cd;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+}
+
+.final-div {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    color: #333; /* Adjust as needed */
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Adjust as needed */
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+  }
+
+  a:active {
+    color: rgb(255, 255, 255); 
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content:center;
+    margin-top: 5px;
+    align-items: center;
+    gap: 0.5cm;
+  }
+
+  .fa-facebook-f{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all ease-in-out 1s;
+  }
+ 
+  .fa-twitter{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all ease-in-out 1s;
+  }
+ 
+  .fa-instagram{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all ease-in-out 1s;
+  }
+
+  .fa-youtube{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all ease-in-out 1s;
+  }
+ 
+  .fa-linkedin{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all ease-in-out 1s;
+  }
+
+  .fa-github{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all ease-in-out 1s;
+  }
+
+  .handles{
+    display: inline-block;
+    align-items:flex-start
+  }

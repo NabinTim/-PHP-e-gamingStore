@@ -27,8 +27,9 @@
     <a class="nav-link" href="#grid-container2">Products</a>
     <a class="nav-link" href="#">Register</a>
     <a class="nav-link" href="#">Contact</a>
-    <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i><sup>1</sup></a>
-    <a class="nav-link" href="#">Your Balance: 1589$ </a>
+    <a class="nav-link" href="#">Your Balance: 0$ </a>
+    <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i><sup id="cartButton">0</sup></a>
+    
 </nav>
 
         
@@ -60,191 +61,169 @@
     </div>
 
     <div class="grid-container">
-    <?php
-    // PHP code to handle the redirection
-    if(isset($_POST['buy'])) {
-        header("Location: order.php"); // Redirect to order.php
-        exit();
-    }
-    
-    ?>
+
+
 <!-- First game -->
 <div class="grid-item" id="game1">
     <img src="images/spider.avif" alt="1st game">
-    <form method="post" action="order.php">
+  
+    <form>
         <input type="hidden" name="game" value="Spider-Man Miles Morales">
         <input type="hidden" name="price" value="49.99">
         
-        <!-- Add input field for Add Date of Birth To Continue -->
-        <label for="dob1">Add Date of Birth To Continue:</label>
-        <input type="date" id="dob1" name="dob" required>
-        
-        <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
+        <button type="submit" class="button1 addToCart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
     </form>
 </div>
 
 <!-- Second Game -->
 <div class="grid-item" id="game2">
     <img src="images/cyber.avif" alt="2nd game">
-    <form method="post" action="order.php">
+  
         <input type="hidden" name="game" value="Rocket League">
         <input type="hidden" name="price" value="59.99">
         
-        <!-- Add input field for Add Date of Birth To Continue -->
-        <label for="dob2">Add Date of Birth To Continue:</label>
-        <input type="date" id="dob2" name="dob" required>
+
         
-        <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
+        <button type="submit" class="button1 addToCart" id="cart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
     </form>
 </div>
 
 <!-- Third Game -->
 <div class="grid-item" id="game3">
     <img src="images/gtav.avif" alt="3rd game">
-    <form method="post" action="order.php">
+  
         <input type="hidden" name="game" value="GTA V">
         <input type="hidden" name="price" value="39.99">
         
-        <!-- Add input field for Add Date of Birth To Continue -->
-        <label for="dob3">Add Date of Birth To Continue:</label>
-        <input type="date" id="dob3" name="dob" required>
+
+ 
         
-        <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
+        <button type="submit" class="button1 addToCart" id="cart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
     </form>
 </div>
 
 <!-- Fourth game -->
 <div class="grid-item" id="game4">
     <img src="images/gtavc.avif" alt="4th game">
-    <form method="post" action="order.php">
+  
         <input type="hidden" name="game" value="GTA Vice City">
         <input type="hidden" name="price" value="29.99">
         
-        <!-- Add input field for Add Date of Birth To Continue -->
-        <label for="dob4">Add Date of Birth To Continue:</label>
-        <input type="date" id="dob4" name="dob" required>
+
+   
         
-        <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
+        <button type="submit" class="button1 addToCart" id="cart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
     </form>
 </div>
 
 <!-- Fifth game -->
 <div class="grid-item" id="game5">
     <img src="images/spider.avif" alt="5th game">
-    <form method="post" action="order.php">
+  
         <input type="hidden" name="game" value="Spider-Man Miles Morales">
         <input type="hidden" name="price" value="49.99">
         
-        <!-- Add input field for Add Date of Birth To Continue -->
-        <label for="dob5">Add Date of Birth To Continue:</label>
-        <input type="date" id="dob5" name="dob" required>
+
+
         
-        <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
+        <button type="submit" class="button1 addToCart" id="cart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
     </form>
 </div>
 
 <!-- Sixth game -->
 <div class="grid-item" id="game6">
     <img src="images/pubg.avif" alt="6th game">
-    <form method="post" action="order.php">
+  
         <input type="hidden" name="game" value="PUBG BATTLEGROUNDS">
         <input type="hidden" name="price" value="29.99">
         
-        <!-- Add input field for Add Date of Birth To Continue -->
-        <label for="dob6">Add Date of Birth To Continue:</label>
-        <input type="date" id="dob6" name="dob" required>
+
+
         
-        <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
+        <button type="submit" class="button1 addToCart" id="cart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
     </form>
 </div>
 
 <!-- Seventh game -->
 <div class="grid-item" id="game7">
     <img src="images/fc.avif" alt="7th game">
-    <form method="post" action="order.php">
+  
         <input type="hidden" name="game" value="FC 2024">
         <input type="hidden" name="price" value="49.99">
         
-        <!-- Add input field for Add Date of Birth To Continue -->
-        <label for="dob7">Add Date of Birth To Continue:</label>
-        <input type="date" id="dob7" name="dob" required>
+
+     
         
-        <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
+        <button type="submit" class="button1 addToCart" id="cart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
     </form>
 </div>
 
 <!-- Eighth game -->
 <div class="grid-item" id="game8">
     <img src="images/rdr.avif" alt="8th game">
-    <form method="post" action="order.php">
+  
         <input type="hidden" name="game" value="Read Dead Redemption 2">
         <input type="hidden" name="price" value="59.99">
         
-        <!-- Add input field for Add Date of Birth To Continue -->
-        <label for="dob8">Add Date of Birth To Continue:</label>
-        <input type="date" id="dob8" name="dob" required>
+
         
-        <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
-    </form>
+        <button type="submit" class="button1 addToCart" id="cart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
+
 </div>
 
 <!-- Ninth game -->
 <div class="grid-item" id="game9">
     <img src="images/last.avif" alt="9th game">
-    <form method="post" action="order.php">
+
         <input type="hidden" name="game" value="Last Remains">
         <input type="hidden" name="price" value="39.99">
         
-        <!-- Add input field for Add Date of Birth To Continue -->
-        <label for="dob9">Add Date of Birth To Continue:</label>
-        <input type="date" id="dob9" name="dob" required>
+
+
         
-        <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
-    </form>
+        <button type="submit" class="button1 addToCart" id="cart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
+
 </div>
 
 <!-- Tenth game -->
 <div class="grid-item" id="game10">
     <img src="images/drift.avif" alt="10th game">
-    <form method="post" action="order.php">
+  
         <input type="hidden" name="game" value="Torque Drift 2">
         <input type="hidden" name="price" value="19.99">
         
-        <!-- Add input field for Add Date of Birth To Continue -->
-        <label for="dob10">Add Date of Birth To Continue:</label>
-        <input type="date" id="dob10" name="dob" required>
+
+ 
         
-        <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
+        <button type="submit" class="button1 addToCart" id="cart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
     </form>
 </div>
 
 <!-- Eleventh game -->
 <div class="grid-item" id="game11">
     <img src="images/lastofus.avif" alt="11th game">
-    <form method="post" action="order.php">
+  
         <input type="hidden" name="game" value="THE LAST OF US PART 1">
         <input type="hidden" name="price" value="39.99">
         
-        <!-- Add input field for Add Date of Birth To Continue -->
-        <label for="dob11">Add Date of Birth To Continue:</label>
-        <input type="date" id="dob11" name="dob" required>
+
+
         
-        <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
+        <button type="submit" class="button1 addToCart" id="cart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
     </form>
 </div>
 
 <!-- Twelfth game -->
 <div class="grid-item" id="game12">
     <img src="images/sims4.avif" alt="12th game">
-    <form method="post" action="order.php">
+  
         <input type="hidden" name="game" value="The SIMS 4">
         <input type="hidden" name="price" value="49.99">
         
-        <!-- Add input field for Add Date of Birth To Continue -->
-        <label for="dob12">Add Date of Birth To Continue:</label>
-        <input type="date" id="dob12" name="dob" required>
+
         
-        <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
+        
+        <button type="submit" class="button1 addToCart" id="cart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
     </form>
 </div>
 
@@ -252,17 +231,21 @@
 <!-- Twelfth game -->
 <div class="grid-item" id="game12">
     <img src="images/sims4.avif" alt="12th game">
-    <form method="post" action="order.php">
+  
         <input type="hidden" name="game" value="The SIMS 4">
         <input type="hidden" name="price" value="49.99">
         
-        <!-- Add input field for Add Date of Birth To Continue -->
-        <label for="dob12">Add Date of Birth To Continue:</label>
-        <input type="date" id="dob12" name="dob" required>
+
         
-        <button type="submit" class="button1">Start Buying<i class="fa-solid fa-cart-shopping"></i></button>
+        
+        <button type="submit" class="button1 addToCart" id="cart">Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
     </form>
 </div>
+</div>
+
+
+
+
 </div>
 <div class="top-games" >
     <p>Some of the most anticipated and most selling games of 2024</p>
@@ -277,37 +260,7 @@
 <div class="grid-item2"><img src="images/dead.jpg" alt="20nd game"></div>
 
 
-<!-- <div class="grid-container3">
-<div class="grid-item3"><img src="images/gtavi.jpeg" alt="13nd game"></div>
-</div> -->
 </div>
-
-<!-- <div class="categories">
-
-    <table>
-        <thead>
-            <tr>
-
-                <th>Game Genre</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-
-                <td>Sci-Fi</td>
-            </tr>
-            <tr>
-
-                <td>Simulations</td>
-            </tr>
-            <tr>
-
-                <td>FPS</td>
-            </tr>
-            Start Buying as needed -->
-        <!-- </tbody>
-    </table>
-</div>   -->
 
 
 
@@ -332,6 +285,6 @@
     </div>
 </div>    
 </footer>
-   
+<script src="index.js"></script>
 </body>
 </html>
